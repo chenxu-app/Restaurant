@@ -47,8 +47,7 @@ public class RestaurantController {
 
     @RequestMapping(value = "/{restaurant_id}", method = RequestMethod.GET)
     public ResponseEntity<Entity> findById(@PathVariable("restaurant_id") String id) {
-        logger.info(String.format("restaurant-service findByName() invoke:{} for {}",
-                restaurantService.findById(id)));
+        logger.info(String.format("restaurant-service findByName() invoke:{} for {}", id));
         id = id.trim();
         Entity restaurant;
         try {
@@ -67,7 +66,7 @@ public class RestaurantController {
         logger.info(String.format("restaurant-service add() invoke:{} for {}",
                 restaurantVO.getName()));
 
-        Restaurant restaurant = new Restaurant();
+        Restaurant restaurant = new Restaurant(null, null, null, null);
         BeanUtils.copyProperties(restaurantVO, restaurant);
         try {
             restaurantService.add(restaurant);

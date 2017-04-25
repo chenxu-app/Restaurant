@@ -6,17 +6,18 @@ import com.cx.mmj.domain.model.entity.Restaurant;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Map;
 
-public class RestaurantService {
-    public Collection<Restaurant> findByName(String name) {
-        return new ArrayList<Restaurant>();
-    }
+public interface RestaurantService {
+    Collection<Restaurant> findByName(String name) throws Exception;
 
-    public Entity findById(String id) {
-        return new Entity();
-    }
+    Entity findById(String id) throws Exception;
 
-    public void add(Restaurant restaurant) {
+    void add(Restaurant restaurant) throws Exception;
 
-    }
+    void update(Restaurant restaurant) throws Exception;
+
+    void delete(String id) throws Exception;
+
+    Collection<Restaurant> findByCriteria(Map<String, ArrayList<String>> name) throws Exception;
 }
