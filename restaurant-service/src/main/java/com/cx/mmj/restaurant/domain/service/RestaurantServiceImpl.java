@@ -1,15 +1,14 @@
-package com.cx.mmj.domain.service;
+package com.cx.mmj.restaurant.domain.service;
 
 
-import com.cx.mmj.domain.model.entity.Entity;
-import com.cx.mmj.domain.model.entity.Restaurant;
-import com.cx.mmj.domain.repository.Repository;
-import com.cx.mmj.domain.repository.RestaurantRepository;
+import com.cx.mmj.restaurant.domain.model.entity.Entity;
+import com.cx.mmj.restaurant.domain.model.entity.Restaurant;
+import com.cx.mmj.restaurant.domain.repository.Repository;
+import com.cx.mmj.restaurant.domain.repository.RestaurantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-import javax.xml.ws.ServiceMode;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.cx.mmj.domain.repository;
+package com.cx.mmj.restaurant.domain.repository;
 
 /**
  * Created by cx on 2017/4/25.

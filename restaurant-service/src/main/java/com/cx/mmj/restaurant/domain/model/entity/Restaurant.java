@@ -1,4 +1,4 @@
-package com.cx.mmj.domain.model.entity;
+package com.cx.mmj.restaurant.domain.model.entity;
 
 import java.util.ArrayList;
 import java.util.List;

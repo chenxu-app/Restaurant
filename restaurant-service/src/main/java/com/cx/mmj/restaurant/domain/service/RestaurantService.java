@@ -1,8 +1,8 @@
-package com.cx.mmj.domain.service;
+package com.cx.mmj.restaurant.domain.service;
 
 
-import com.cx.mmj.domain.model.entity.Entity;
-import com.cx.mmj.domain.model.entity.Restaurant;
+import com.cx.mmj.restaurant.domain.model.entity.Entity;
+import com.cx.mmj.restaurant.domain.model.entity.Restaurant;
 
 import java.util.ArrayList;
 import java.util.Collection;

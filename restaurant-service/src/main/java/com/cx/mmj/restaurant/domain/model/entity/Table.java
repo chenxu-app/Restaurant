@@ -1,4 +1,4 @@
-package com.cx.mmj.domain.model.entity;
+package com.cx.mmj.restaurant.domain.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

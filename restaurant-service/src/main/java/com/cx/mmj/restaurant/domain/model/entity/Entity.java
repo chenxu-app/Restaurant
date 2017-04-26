@@ -1,4 +1,4 @@
-package com.cx.mmj.domain.model.entity;
+package com.cx.mmj.restaurant.domain.model.entity;
 
 /**
  * Created by cx on 2017/4/24.

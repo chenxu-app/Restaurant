@@ -1,10 +1,10 @@
-package com.cx.mmj.resource;
+package com.cx.mmj.restaurant.resource;
 
 
-import com.cx.mmj.domain.model.entity.Entity;
-import com.cx.mmj.domain.model.entity.Restaurant;
-import com.cx.mmj.domain.service.RestaurantService;
-import com.cx.mmj.domain.valueobject.RestaurantVO;
+import com.cx.mmj.restaurant.domain.model.entity.Entity;
+import com.cx.mmj.restaurant.domain.model.entity.Restaurant;
+import com.cx.mmj.restaurant.domain.service.RestaurantService;
+import com.cx.mmj.restaurant.domain.valueobject.RestaurantVO;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -56,7 +56,7 @@ public class RestaurantController {
             logger.log(Level.WARNING, "Exception raised findById REST Call", ex);
             return new ResponseEntity<Entity>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
-        return restaurant == null
+        return restaurant != null
                 ? new ResponseEntity<Entity>(restaurant, HttpStatus.OK)
                 : new ResponseEntity<Entity>(HttpStatus.NO_CONTENT);
     }

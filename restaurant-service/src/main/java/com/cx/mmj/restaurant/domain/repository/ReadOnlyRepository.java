@@ -1,6 +1,6 @@
-package com.cx.mmj.domain.repository;
+package com.cx.mmj.restaurant.domain.repository;
 
-import com.cx.mmj.domain.model.entity.Entity;
+import com.cx.mmj.restaurant.domain.model.entity.Entity;
 
 import java.util.Collection;
 

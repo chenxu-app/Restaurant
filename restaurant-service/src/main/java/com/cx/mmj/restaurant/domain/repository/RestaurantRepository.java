@@ -1,4 +1,4 @@
-package com.cx.mmj.domain.repository;
+package com.cx.mmj.restaurant.domain.repository;
 
 import java.util.Collection;
 
