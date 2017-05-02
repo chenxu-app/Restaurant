@@ -2,14 +2,14 @@ package com.cx.mmj.user.domain.repository;
 
 import com.cx.mmj.user.domain.model.entity.Entity;
 import com.cx.mmj.user.domain.model.entity.User;
+import org.springframework.stereotype.Repository;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import org.springframework.stereotype.Repository;
 
 /**
- *
  * @author Sourabh Sharma
  */
 @Repository("userRepository")
@@ -45,7 +45,6 @@ public class InMemUserRepository implements UserRepository<User, String> {
     }
 
     /**
-     *
      * @param entity
      */
     @Override
@@ -54,7 +53,6 @@ public class InMemUserRepository implements UserRepository<User, String> {
     }
 
     /**
-     *
      * @param id
      */
     @Override
@@ -65,7 +63,6 @@ public class InMemUserRepository implements UserRepository<User, String> {
     }
 
     /**
-     *
      * @param entity
      */
     @Override
@@ -76,7 +73,6 @@ public class InMemUserRepository implements UserRepository<User, String> {
     }
 
     /**
-     *
      * @param id
      * @return
      */
@@ -86,7 +82,6 @@ public class InMemUserRepository implements UserRepository<User, String> {
     }
 
     /**
-     *
      * @param id
      * @return
      */
@@ -96,7 +91,6 @@ public class InMemUserRepository implements UserRepository<User, String> {
     }
 
     /**
-     *
      * @return
      */
     @Override
@@ -105,7 +99,6 @@ public class InMemUserRepository implements UserRepository<User, String> {
     }
 
     /**
-     *
      * @param name
      * @return
      * @throws Exception

@@ -3,14 +3,14 @@ package com.cx.mmj.booking.domain.service;
 import com.cx.mmj.booking.domain.model.entity.Booking;
 import com.cx.mmj.booking.domain.model.entity.Entity;
 import com.cx.mmj.booking.domain.repository.BookingRepository;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Map;
+
 /**
- *
  * @author Sourabh Sharma
  */
 @Service("bookingService")
@@ -20,7 +20,6 @@ public class BookingServiceImpl extends BaseService<Booking, String>
     private BookingRepository<Booking, String> bookingRepository;
 
     /**
-     *
      * @param bookingRepository
      */
     @Autowired
@@ -42,7 +41,6 @@ public class BookingServiceImpl extends BaseService<Booking, String>
     }
 
     /**
-     *
      * @param name
      * @return
      * @throws Exception
@@ -53,7 +51,6 @@ public class BookingServiceImpl extends BaseService<Booking, String>
     }
 
     /**
-     *
      * @param booking
      * @throws Exception
      */
@@ -63,7 +60,6 @@ public class BookingServiceImpl extends BaseService<Booking, String>
     }
 
     /**
-     *
      * @param id
      * @throws Exception
      */
@@ -73,7 +69,6 @@ public class BookingServiceImpl extends BaseService<Booking, String>
     }
 
     /**
-     *
      * @param id
      * @return
      * @throws Exception
@@ -84,7 +79,6 @@ public class BookingServiceImpl extends BaseService<Booking, String>
     }
 
     /**
-     *
      * @param name
      * @return
      * @throws Exception

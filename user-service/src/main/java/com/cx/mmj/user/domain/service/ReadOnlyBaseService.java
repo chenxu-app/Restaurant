@@ -3,10 +3,9 @@ package com.cx.mmj.user.domain.service;
 import com.cx.mmj.user.domain.repository.Repository;
 
 /**
- *
- * @author Sourabh Sharma
  * @param <TE>
  * @param <T>
+ * @author Sourabh Sharma
  */
 public abstract class ReadOnlyBaseService<TE, T> {
 

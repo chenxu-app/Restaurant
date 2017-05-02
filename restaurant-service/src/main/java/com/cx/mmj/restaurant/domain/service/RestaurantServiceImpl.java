@@ -41,7 +41,7 @@ public class RestaurantServiceImpl extends BaseService<Restaurant, String>
 
     @Override
     public void add(Restaurant restaurant) throws Exception {
-        if(restaurantRepository.containsName(restaurant.getName())) {
+        if (restaurantRepository.containsName(restaurant.getName())) {
             throw new Exception(String.format("There is already a product with the name - %s", restaurant.getName()));
         }
 

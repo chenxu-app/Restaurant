@@ -1,7 +1,6 @@
 package com.cx.mmj.user.domain.model.entity;
 
 /**
- *
  * @author Sourabh Sharma
  */
 public class User extends BaseEntity<String> {
@@ -11,7 +10,6 @@ public class User extends BaseEntity<String> {
     private String phoneNo;
 
     /**
-     *
      * @param name
      * @param id
      * @param address
@@ -26,7 +24,6 @@ public class User extends BaseEntity<String> {
     }
 
     /**
-     *
      * @return
      */
     public String getAddress() {
@@ -34,7 +31,6 @@ public class User extends BaseEntity<String> {
     }
 
     /**
-     *
      * @param address
      */
     public void setAddress(String address) {
@@ -42,7 +38,6 @@ public class User extends BaseEntity<String> {
     }
 
     /**
-     *
      * @return
      */
     public String getCity() {
@@ -50,7 +45,6 @@ public class User extends BaseEntity<String> {
     }
 
     /**
-     *
      * @param city
      */
     public void setCity(String city) {
@@ -58,7 +52,6 @@ public class User extends BaseEntity<String> {
     }
 
     /**
-     *
      * @return
      */
     public String getPhoneNo() {
@@ -66,7 +59,6 @@ public class User extends BaseEntity<String> {
     }
 
     /**
-     *
      * @param phoneNo
      */
     public void setPhoneNo(String phoneNo) {

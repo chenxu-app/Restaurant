@@ -8,7 +8,6 @@ public class BaseEntity<T> extends Entity<T> {
     private boolean isModified;
 
     /**
-     *
      * @param id
      * @param name
      */
@@ -19,7 +18,6 @@ public class BaseEntity<T> extends Entity<T> {
     }
 
     /**
-     *
      * @return
      */
     public boolean isIsModified() {

@@ -25,10 +25,9 @@ import static junit.framework.Assert.*;
 @WebIntegrationTest("server.port=0")
 public class RestaurantControllerIntegrationTests extends AbstractRestaurantControllerTests {
 
-    private final RestTemplate restTemplate = new TestRestTemplate();
     //Required to Generate JSON content from Java objects
     public static final ObjectMapper objectMapper = new ObjectMapper();
-
+    private final RestTemplate restTemplate = new TestRestTemplate();
     @Value("${local.server.port}")
     private int port;
 

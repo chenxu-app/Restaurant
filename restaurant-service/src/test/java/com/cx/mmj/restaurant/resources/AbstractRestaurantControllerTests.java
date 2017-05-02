@@ -3,15 +3,15 @@ package com.cx.mmj.restaurant.resources;
 import com.cx.mmj.restaurant.domain.model.entity.Entity;
 import com.cx.mmj.restaurant.domain.model.entity.Restaurant;
 import com.cx.mmj.restaurant.domain.valueobject.RestaurantVO;
-import java.util.Collection;
-import java.util.logging.Logger;
-
 import com.cx.mmj.restaurant.resource.RestaurantController;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+
+import java.util.Collection;
+import java.util.logging.Logger;
 
 
 public abstract class AbstractRestaurantControllerTests {

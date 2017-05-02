@@ -8,7 +8,6 @@ public abstract class Entity<T> {
     String name;
 
     /**
-     *
      * @return
      */
     public T getId() {
@@ -16,7 +15,6 @@ public abstract class Entity<T> {
     }
 
     /**
-     *
      * @param id
      */
     public void setId(T id) {
@@ -24,7 +22,6 @@ public abstract class Entity<T> {
     }
 
     /**
-     *
      * @return
      */
     public String getName() {
@@ -32,7 +29,6 @@ public abstract class Entity<T> {
     }
 
     /**
-     *
      * @param name
      */
     public void setName(String name) {

@@ -2,16 +2,16 @@ package com.cx.mmj.booking.domain.repository;
 
 import com.cx.mmj.booking.domain.model.entity.Booking;
 import com.cx.mmj.booking.domain.model.entity.Entity;
+import org.springframework.stereotype.Repository;
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import org.springframework.stereotype.Repository;
 
 /**
- *
  * @author Sourabh Sharma
  */
 @Repository("bookingRepository")
@@ -47,7 +47,6 @@ public class InMemBookingRepository implements BookingRepository<Booking, String
     }
 
     /**
-     *
      * @param entity
      */
     @Override
@@ -56,7 +55,6 @@ public class InMemBookingRepository implements BookingRepository<Booking, String
     }
 
     /**
-     *
      * @param id
      */
     @Override
@@ -67,7 +65,6 @@ public class InMemBookingRepository implements BookingRepository<Booking, String
     }
 
     /**
-     *
      * @param entity
      */
     @Override
@@ -78,7 +75,6 @@ public class InMemBookingRepository implements BookingRepository<Booking, String
     }
 
     /**
-     *
      * @param id
      * @return
      */
@@ -88,7 +84,6 @@ public class InMemBookingRepository implements BookingRepository<Booking, String
     }
 
     /**
-     *
      * @param id
      * @return
      */
@@ -98,7 +93,6 @@ public class InMemBookingRepository implements BookingRepository<Booking, String
     }
 
     /**
-     *
      * @return
      */
     @Override
@@ -107,7 +101,6 @@ public class InMemBookingRepository implements BookingRepository<Booking, String
     }
 
     /**
-     *
      * @param name
      * @return
      * @throws Exception

@@ -19,6 +19,22 @@ public class RestaurantControllerTests extends AbstractRestaurantControllerTests
      */
     protected static final Restaurant restaurantStaticInstance = new Restaurant(RESTAURANT,
             RESTAURANT_NAME, RESTAURANT_ADDRESS, null);
+    /**
+     * Initialized Restaurant Repository
+     */
+    protected TestRestaurantRepository testRestaurantRepository = new TestRestaurantRepository();
+    /**
+     * Initialized Restaurant Service
+     */
+    protected RestaurantService restaurantService = new RestaurantServiceImpl(testRestaurantRepository);
+
+    /**
+     * Setup method
+     */
+    @Before
+    public void setup() {
+        restaurantController = new RestaurantController(restaurantService);
+    }
 
     /**
      * Test Repository
@@ -122,23 +138,5 @@ public class RestaurantControllerTests extends AbstractRestaurantControllerTests
         public Collection<Restaurant> getAll() {
             return entities.values();
         }
-    }
-
-    /**
-     * Initialized Restaurant Repository
-     */
-    protected TestRestaurantRepository testRestaurantRepository = new TestRestaurantRepository();
-
-    /**
-     * Initialized Restaurant Service
-     */
-    protected RestaurantService restaurantService = new RestaurantServiceImpl(testRestaurantRepository);
-
-    /**
-     * Setup method
-     */
-    @Before
-    public void setup() {
-        restaurantController = new RestaurantController(restaurantService);
     }
 }

@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 /**
- *
  * @author Sourabh Sharma
  */
 public class BookingVO {
@@ -17,86 +16,6 @@ public class BookingVO {
 
     private LocalTime time;
     private String tableId;
-
-    /**
-     *
-     * @return
-     */
-    public String getTableId() {
-        return tableId;
-    }
-
-    /**
-     *
-     * @param tableId
-     */
-    public void setTableId(String tableId) {
-        this.tableId = tableId;
-    }
-
-    /**
-     *
-     * @return
-     */
-    public String getRestaurantId() {
-        return restaurantId;
-    }
-
-    /**
-     *
-     * @param restaurantId
-     */
-    public void setRestaurantId(String restaurantId) {
-        this.restaurantId = restaurantId;
-    }
-
-    /**
-     *
-     * @return
-     */
-    public String getUserId() {
-        return userId;
-    }
-
-    /**
-     *
-     * @param userId
-     */
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
-
-    /**
-     *
-     * @return
-     */
-    public LocalDate getDate() {
-        return date;
-    }
-
-    /**
-     *
-     * @param date
-     */
-    public void setDate(LocalDate date) {
-        this.date = date;
-    }
-
-    /**
-     *
-     * @return
-     */
-    public LocalTime getTime() {
-        return time;
-    }
-
-    /**
-     *
-     * @param time
-     */
-    public void setTime(LocalTime time) {
-        this.time = time;
-    }
 
     /**
      * Default Constructor
@@ -124,6 +43,76 @@ public class BookingVO {
     }
 
     /**
+     * @return
+     */
+    public String getTableId() {
+        return tableId;
+    }
+
+    /**
+     * @param tableId
+     */
+    public void setTableId(String tableId) {
+        this.tableId = tableId;
+    }
+
+    /**
+     * @return
+     */
+    public String getRestaurantId() {
+        return restaurantId;
+    }
+
+    /**
+     * @param restaurantId
+     */
+    public void setRestaurantId(String restaurantId) {
+        this.restaurantId = restaurantId;
+    }
+
+    /**
+     * @return
+     */
+    public String getUserId() {
+        return userId;
+    }
+
+    /**
+     * @param userId
+     */
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    /**
+     * @return
+     */
+    public LocalDate getDate() {
+        return date;
+    }
+
+    /**
+     * @param date
+     */
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
+    /**
+     * @return
+     */
+    public LocalTime getTime() {
+        return time;
+    }
+
+    /**
+     * @param time
+     */
+    public void setTime(LocalTime time) {
+        this.time = time;
+    }
+
+    /**
      * Overridden toString() method that return String presentation of the
      * Object
      *
@@ -139,7 +128,6 @@ public class BookingVO {
     }
 
     /**
-     *
      * @return
      */
     public String getName() {
@@ -147,7 +135,6 @@ public class BookingVO {
     }
 
     /**
-     *
      * @param name
      */
     public void setName(String name) {
@@ -155,7 +142,6 @@ public class BookingVO {
     }
 
     /**
-     *
      * @return
      */
     public String getId() {
@@ -163,7 +149,6 @@ public class BookingVO {
     }
 
     /**
-     *
      * @param id
      */
     public void setId(String id) {

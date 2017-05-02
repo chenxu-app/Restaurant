@@ -11,7 +11,6 @@ public class Table extends BaseEntity<BigInteger> {
     private int capacity;
 
     /**
-     *
      * @param name
      * @param id
      * @param capacity
@@ -22,19 +21,17 @@ public class Table extends BaseEntity<BigInteger> {
     }
 
     /**
-     *
-     * @param capacity
-     */
-    public void setCapacity(int capacity) {
-        this.capacity = capacity;
-    }
-
-    /**
-     *
      * @return
      */
     public int getCapacity() {
         return capacity;
+    }
+
+    /**
+     * @param capacity
+     */
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
     }
 
     /**

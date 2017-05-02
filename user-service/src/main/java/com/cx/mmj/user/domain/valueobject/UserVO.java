@@ -1,7 +1,6 @@
 package com.cx.mmj.user.domain.valueobject;
 
 /**
- *
  * @author Sourabh Sharma
  */
 public class UserVO {
@@ -30,7 +29,12 @@ public class UserVO {
     }
 
     /**
-     *
+     * Default Constructor
+     */
+    public UserVO() {
+    }
+
+    /**
      * @return
      */
     public String getAddress() {
@@ -38,7 +42,6 @@ public class UserVO {
     }
 
     /**
-     *
      * @param address
      */
     public void setAddress(String address) {
@@ -46,7 +49,6 @@ public class UserVO {
     }
 
     /**
-     *
      * @return
      */
     public String getCity() {
@@ -54,7 +56,6 @@ public class UserVO {
     }
 
     /**
-     *
      * @param city
      */
     public void setCity(String city) {
@@ -62,7 +63,6 @@ public class UserVO {
     }
 
     /**
-     *
      * @return
      */
     public String getPhoneNo() {
@@ -70,7 +70,6 @@ public class UserVO {
     }
 
     /**
-     *
      * @param phoneNo
      */
     public void setPhoneNo(String phoneNo) {
@@ -92,13 +91,6 @@ public class UserVO {
     }
 
     /**
-     * Default Constructor
-     */
-    public UserVO() {
-    }
-
-    /**
-     *
      * @return
      */
     public String getName() {
@@ -106,7 +98,6 @@ public class UserVO {
     }
 
     /**
-     *
      * @param name
      */
     public void setName(String name) {
@@ -114,7 +105,6 @@ public class UserVO {
     }
 
     /**
-     *
      * @return
      */
     public String getId() {
@@ -122,7 +112,6 @@ public class UserVO {
     }
 
     /**
-     *
      * @param id
      */
     public void setId(String id) {
