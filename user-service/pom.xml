@@ -7,7 +7,7 @@
     <parent>
         <artifactId>Restaurant</artifactId>
         <groupId>com.cx.mmj</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>CX-SNAPSHOT</version>
     </parent>
 
     <artifactId>user-service</artifactId>

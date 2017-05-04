@@ -6,11 +6,13 @@
 
     <groupId>com.cx.mmj</groupId>
     <artifactId>Restaurant</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>CX-SNAPSHOT</version>
 
     <packaging>pom</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <parent>
@@ -24,6 +26,12 @@
         <module>restaurant-service</module>
         <module>booking-service</module>
         <module>user-service</module>
+        <module>common</module>
+        <module>api-service</module>
+        <module>dashboard-server</module>
+        <module>security-service</module>
+        <module>turbine-server</module>
+        <module>zuul-server</module>
     </modules>
 
     <!-- Build step is required to include the spring boot artifacts in generated jars -->
@@ -36,6 +44,28 @@
             </plugin>
         </plugins>
     </build>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Dalston.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+    </dependencies>
 
     <!-- Added repository additionally as Angel.SR4 was not available in central repository -->
     <repositories>
