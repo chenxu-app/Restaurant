@@ -13,7 +13,7 @@
     <packaging>jar</packaging>
     <name>online-table-reservation:restaurant-service</name>
     <properties>
-        <start-class>com.packtpub.mmj.restaurant.RestaurantApp</start-class>
+        <start-class>com.cx.mmj.restaurant.RestaurantApp</start-class>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>

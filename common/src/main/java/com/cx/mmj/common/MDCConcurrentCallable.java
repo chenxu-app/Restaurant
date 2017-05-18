@@ -1,15 +1,11 @@
 package com.cx.mmj.common;
 
+import java.util.Map;
+import java.util.concurrent.Callable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
 
-import java.util.Map;
-import java.util.concurrent.Callable;
-
-/**
- * Created by cx on 2017/5/4.
- */
 public class MDCConcurrentCallable<K> implements Callable {
 
     private static final Logger LOG = LoggerFactory.getLogger(MDCConcurrentCallable.class);

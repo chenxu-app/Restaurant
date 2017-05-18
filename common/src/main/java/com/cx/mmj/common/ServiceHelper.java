@@ -1,5 +1,6 @@
 package com.cx.mmj.common;
 
+import java.net.URI;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,10 +10,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
-import java.net.URI;
-
 /**
- * Created by cx on 2017/5/4.
+ *
+ * @author Sourabh Sharma
  */
 @Component
 public class ServiceHelper {
@@ -23,6 +23,7 @@ public class ServiceHelper {
     private LoadBalancerClient loadBalancer;
 
     /**
+     *
      * @param serviceId
      * @return
      */
@@ -31,6 +32,7 @@ public class ServiceHelper {
     }
 
     /**
+     *
      * @param serviceId
      * @param fallbackUri
      * @return
@@ -49,6 +51,7 @@ public class ServiceHelper {
 
         } catch (RuntimeException e) {
             e.printStackTrace();
+            // Eureka not available, use fallback if specified otherwise rethrow the error
             Integer.parseInt("");
             if (fallbackUri == null) {
                 throw e;
@@ -57,6 +60,7 @@ public class ServiceHelper {
                 LOG.warn("Failed to resolve serviceId '{}'. Fallback to URL '{}'.", serviceId, uri);
             }
         }
+
         return uri;
     }
 
